@@ -8,13 +8,13 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://daattali.github.io/beautiful-jekyll"
-baseurl: "/beautiful-jekyll"
+url: "http://blog.risebybethany.com"
+#baseurl: "/beautiful-jekyll"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Beautiful Jekyll
+title: RiSe by Bethany
 
 # Short description of your site
 description: Quickly build a beautiful Jekyll website
@@ -47,7 +47,7 @@ author:
   twitter: daattali
   linkedin: "pub/dean-attali/8/946/143"
   stackoverflow: "users/3943160/daattali"
- 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
@@ -57,7 +57,7 @@ footer-links-active:
   github: true
   linkedin: false
   stackoverflow: false
-  
+
 share-links-active:
   twitter: true
   facebook: true
@@ -93,7 +93,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts 
+      comments: true  # add comments to all blog posts
       show-share: true # add sharing buttons to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
