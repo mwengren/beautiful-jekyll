@@ -3,6 +3,8 @@ common-css:
   - "/css/bootstrap.min.css"
   - "/css/bootstrap-social.css"
   - "/css/main.css"
+  - "/css/photorama/galleries.css"
+  - "/css/photorama/WYSIWYG.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -12,22 +14,29 @@ common-js:
   - "/js/jquery-1.11.2.min.js"
   - "/js/bootstrap.min.js"
   - "/js/main.js"
+  - "/js/photorama/modernizr.js"
+  - "/js/photorama/retina.min.js"
+  - "/js/photorama/jquery.mousewheel.min.js"
+  - "/js/photorama/jquery.cycle.min.js"
+  - "/js/photorama/jquery.lazylinepainter.min.js"
+  - "/js/photorama/kenburns.min.js"
+  - "/js/photorama/scripts.js"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  
+
   {% include head.html %}
 
   <body>
-  
+
     {% include nav.html %}
 
     {{ content }}
 
     {% include footer.html %}
-  
+
     {% include footer-scripts.html %}
-  
+
   </body>
 </html>

@@ -9,19 +9,19 @@
   <meta name="description" content="{{ site.description }}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-  
+
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}    
-  
+  {% endif %}
+
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -32,8 +32,8 @@
     {% for css in page.ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
@@ -54,21 +54,21 @@
   {% else %}
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
-  
+
   <meta property="og:type" content="website" />
-  
+
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
-  
+
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
-  {% endif %}  
-  
+  {% endif %}
+
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
@@ -79,5 +79,5 @@
   <meta name="twitter:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
-  {% endif %}  
+  {% endif %}
 </head>
